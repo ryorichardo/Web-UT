@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-4/css/bootstrap-grid.min.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-4/css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-4/js/bootstrap.bundle.min.js')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.0.0-dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.0.0-dist/js/bootstrap.js')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.0.0-dist/js/bootstrap.min.js')}}">
         <link rel="stylesheet" href="{{url_for('static', filename='/style.css')}}">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/59f3201c7b.js" crossorigin="anonymous"></script>
@@ -16,46 +16,15 @@
         <link rel="icon" href="{{url_for('static', filename='/rinsmuns.png')}}">
     </head>
     <body>
-        <div class="page-container">
-            <div class="padding">
-                <div class="card-header">
-                    <h4 class="card-title"><strong>Jam-Bot </strong></h4>
-                    <h7 class="card-text">Penunjang Produktivitas</h7>
-                </div>
-                <div class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important;">
-                    {% for i in range(nchat) %}
-                        {% if i%2 == 0 %}
-                            <div class="media media-chat"> <img class="avatar" src="{{url_for('static', filename='/ronaldo.jpg')}}" alt="...">
-                                <div class="media-body">
-                                    {% autoescape false %}
-                                    <p>{{ chat[i] }}</p>
-                                    {% endautoescape %}
-                                </div>
-                            </div>
-                        {% else %}
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>{{ chat[i] }}</p>
-                                </div>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                        <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                    </div>
-                    <div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
-                        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
-                    </div>
-                </div>
-                <form method="POST">
-                    <div class="publisher bt-1 border-light"> 
-                        <input class="publisher-input" type="text" placeholder="Write something" name="query"> 
-                        <button class="publisher-btn text-info" href="#" data-abc="true" type="submit">
-                            <i class="fa fa-paper-plane"></i>
-                        </button> 
-                    </div>
-                </form>
-            </div>
-        </div>    
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
     </body>
 </html>

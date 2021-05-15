@@ -1,0 +1,16 @@
+* {
+    background-color: #32390d;
+}
+
+.navbar-ut {
+    background-color: #5f6d14;
+    opacity: 75%;
+}
+.container-fluid {
+    text-align: center;
+}
+.bg-footer {
+    background-color: #cbd90a;
+    opacity: 100%;
+    height: 150px;
+}

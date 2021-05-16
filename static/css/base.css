@@ -9,7 +9,11 @@ h1 {
 }
 
 .navbar-ut {
-    background-color: rgba(95, 109, 20, 0.6);
+    background-color: rgba(50, 57, 13, 0.8);
+}
+
+.nav-item {
+    margin: 0 100px 0 100px;
 }
 
 .container-fluid {

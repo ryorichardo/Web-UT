@@ -1,3 +1,4 @@
+/* Body and it's base elements */
 body {
     background-color: #1c1c19;
     color: #fafafa;
@@ -8,6 +9,7 @@ h1 {
     color: #fafafa;
 }
 
+/* Navbar */
 .navbar-ut {
     background-color: rgba(50, 57, 13, 0.8);
 }
@@ -20,6 +22,11 @@ h1 {
     text-align: center;
 }
 
+.navbar-toggler {
+    margin-right: 10px;
+}
+
+/* Footer */
 .bg-footer {
     background-color: #98ad09;
 }

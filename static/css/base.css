@@ -22,8 +22,9 @@ h1 {
     text-align: center;
 }
 
-.navbar-toggler {
+.navbar-dark .navbar-toggler {
     margin-right: 10px;
+    border: none;
 }
 
 /* Footer */

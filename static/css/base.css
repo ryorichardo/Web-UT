@@ -29,7 +29,7 @@ h1 {
 
 /* Footer */
 .bg-footer {
-    background-color: #98ad09;
+    background-color: #9bba1d;
 }
 
 .contact {
@@ -41,4 +41,48 @@ h1 {
     background-color: #1c1c19;
     padding: 0.8rem 0 0.8rem 0;
     position: absolute;
+}
+
+.icon {
+    height: 1.5rem;
+}
+
+.footer {
+    font-family: Oswald;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.circle {
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #fafafa;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9cf29;
+}
+
+.gridz {
+    width: 7rem;
+}
+
+.col-5 h5 {
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 426px){
+    .col-5 h5 {
+        font-size: 1.3rem;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    
 }

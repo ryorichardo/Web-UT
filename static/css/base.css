@@ -29,13 +29,88 @@ h1 {
 
 /* Footer */
 .bg-footer {
-    background-color: #98ad09;
+    background-color: #9bba1d;
 }
 
 .contact {
     padding: 1rem 0 1rem 0;
 }
 
+.icon {
+    height: 1.5rem;
+}
+
+.footer {
+    font-family: Oswald;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Contact Us */
+.contactus h5 {
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    margin: 0;
+    align-self: center;
+    height: 0.2rem;
+    background-color: #fff;
+}
+
+/* Social Media */
+.circle {
+    margin: auto;
+    margin-bottom: 0.3rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #fafafa;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a9cf29;
+}
+
+.gridz {
+    width: 7rem;
+}
+
+.gridz:hover .circle {
+    border: 2px solid rgba(50, 57, 13, 0.5);
+}
+
+.gridz:hover p{
+    color: rgba(50, 57, 13, 0.8);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width: 426px) {
+    .contactus h5 {
+        font-size: 1.5rem;
+    }
+
+    .gridz {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .gridz {
+        width: 5rem;
+        font-size: 0.5rem;
+    }
+}
+
+/* Copyright */
 .copyr {
     font-size: 0.8rem;
     background-color: #1c1c19;

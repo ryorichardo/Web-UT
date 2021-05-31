@@ -12,10 +12,15 @@ h5 {
     font-size: 7vw;
 }
 
+/* Container 1: title */
+.title {
+    display: flex;
+    justify-content: center;
+}
+
 /* Logo UT */
 .logo {
     width: 20vw;
     margin-top: 2rem;
     color: #fff;
 }
-

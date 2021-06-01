@@ -31,16 +31,28 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-    <div class="carousel-caption">
-      <h5>Welcome.</h5>
+    <div class="carousel-caption home">
+      <div class="container">
+        <h5>Welcome.</h5>
+      </div>
     </div>
   </div>
 
   <div class="container aos-init aos-animate justify-content-center title" data-aos="fade-up">
-
       <img src="{{url_for('static', filename='/images/Logo-UT.png')}}" class="logo">
   </div>
-  <h1 class="aos-init aos-animate" data-aos="fade-up">This is home</h1> 
-  <h1 class="animate__animated animate__fadeInUp">Tes animate</h1>
+  <div class="container aos-init aos-animate justify-content-center title" data-aos="fade-up" data-aos-delay="100">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non leo a ex interdum auctor. 
+      Donec quis sagittis tellus. Maecenas diam ante, mollis maximus efficitur ut, bibendum nec nibh. 
+      Vivamus lobortis magna et lorem volutpat vestibulum. Praesent vestibulum, sem non tincidunt rhoncus, 
+      nunc nibh pellentesque lectus, a euismod nulla felis vitae metus. Sed id lacinia nulla. 
+      Proin consequat porta dui, non vehicula nisi imperdiet eget. Nullam et mi eu nisl ultricies semper. 
+      Etiam fringilla erat eget velit venenatis, id dapibus orci imperdiet. Nam eu fringilla ligula, 
+      sit amet efficitur ante. Praesent suscipit enim nunc, sodales interdum leo tristique accumsan. 
+      Aliquam tincidunt euismod lacus, sed fermentum ipsum imperdiet non.
+    </p>
+</div>
+  
 
 {% endblock %}

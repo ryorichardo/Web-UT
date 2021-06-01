@@ -58,22 +58,22 @@
         <!-- Section: Links  -->
         <section class="contact">
           <div class="container text-center text-md-start">
-            
-            <div class="row justify-content-center" style="margin-bottom: 1rem;">
-              <div class="col col-xl-5 line"></div>
-              <div class="col col-auto contactus">
-                <h5>CONTACT US</h5>
+            <div class="container">
+              <div class="row justify-content-center" style="margin-bottom: 1rem;">
+                <div class="col b-line"></div>
+                <div class="col col-auto contactus">
+                  <h5>CONTACT US</h5>
+                </div>
+                <div class="col b-line"></div>
               </div>
-              <div class="col col-xl-5 line"></div>
             </div>
 
             <!-- Grid row -->
             <div class="row justify-content-center footer">
-              
               <div class="col col-sm-1 gridz"> 
                 <a href="http://instagram.com/ut_itb"> 
                   <div class="circle">
-                    <img src="{{url_for('static', filename='/images/footer/insta.png')}}" class="icon">
+                    <img src="{{url_for('static', filename='/images/footer/insta.png')}}" class="b-icon">
                   </div>
                   <p>@ut_itb</p>
                 </a>
@@ -82,7 +82,7 @@
               <div class="col col-sm-1 gridz" >
                 <a href=#> 
                   <div class="circle">
-                    <img src="{{url_for('static', filename='/images/footer/linkedin.png')}}" class="icon">
+                    <img src="{{url_for('static', filename='/images/footer/linkedin.png')}}" class="b-icon">
                   </div>
                   <p>Unit Tenis ITB</p>
                 </a>
@@ -90,14 +90,14 @@
 
               <div class="col col-sm-1 gridz">  
                 <div class="circle">
-                  <img src="{{url_for('static', filename='/images/footer/phone.png')}}" class="icon">
+                  <img src="{{url_for('static', filename='/images/footer/phone.png')}}" class="b-icon">
                 </div>
                 <p>012 345 6789</p>
               </div>
 
               <div class="col col-sm-1 gridz">  
                 <div class="circle">
-                  <img src="{{url_for('static', filename='/images/footer/email.png')}}" class="icon">
+                  <img src="{{url_for('static', filename='/images/footer/email.png')}}" class="b-icon">
                 </div>
                 <p>ut_itb@km.itb.com</p>
               </div>
@@ -115,6 +115,13 @@
         <!-- Copyright -->
       </footer>
 
+      <!-- Back to top button -->
+      <a id="button">
+        <img src="{{url_for('static', filename='/images/scroll.png')}}" class="arrow">
+      </a>
+
+      <!-- JQuery -->
+      <script src="{{url_for('static', filename='jquery.js')}}"></script>
 
       <!-- Bootstrap Javascript -->
       <script src="{{url_for('static', filename='bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js')}}"></script>
@@ -123,10 +130,28 @@
       <script src="{{url_for('static', filename='aos-master/dist/aos.js')}}"></script>
       <script>
         AOS.init({
-				  easing: 'ease-out-back',
+				  easing: 'ease',
 				  duration: 500
 			  });
       </script>    
+
+      <!-- Button to top Javascript -->
+      <script>
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
+        });
+
+        btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0});
+        });
+      </script>
 
     </body>
 </html>

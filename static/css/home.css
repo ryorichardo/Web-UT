@@ -1,14 +1,12 @@
 /* Carousel */
-.carousel-caption {
-    max-width: 25vw;
-    bottom: 0;
-    left: 0;
-    padding: 0 0 2vw 4vw;
+.home {
+    width: 100%;
+    right: auto;
+    left: auto;
 }
 
 h5 {
     width: fit-content;
-    font-family: Oswald;
     font-size: 7vw;
 }
 
@@ -16,11 +14,19 @@ h5 {
 .title {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* Logo UT */
 .logo {
-    width: 20vw;
+    width: 10rem;
     margin-top: 2rem;
     color: #fff;
+}
+
+@media screen and (max-width: 426px) {
+    .logo {
+        width: 7rem;
+    }
 }

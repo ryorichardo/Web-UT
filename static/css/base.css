@@ -1,17 +1,19 @@
 /* Body and it's base elements */
 body {
+    font-family: Timeless;
     background-color: #1c1c19;
-    color: #fafafa;
+    color: #ffffff;
     overflow-y: scroll; /* Show vertical scrollbar */
 }
 
-h1 {
-    color: #fafafa;
+h1, h2, h3, h4, h5, h6 {
+    font-family: Oswald;
 }
 
 /* Navbar */
 .navbar-ut {
     background-color: rgba(50, 57, 13, 0.8);
+    font-family: var(--bs-font-sans-serif);
 }
 
 .nav-item {
@@ -27,6 +29,51 @@ h1 {
     border: none;
 }
 
+/* Back to top button */
+#button {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    text-align: center;
+    position: fixed;
+    bottom: 3vw;
+    right: 5vw;
+    transition: background-color .3s, opacity .5s, visibility .5s, transform .3s;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    height: 2rem;
+}
+
+#button::after {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    transform: translateY(-10px);
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 /* Footer */
 .bg-footer {
     background-color: #9bba1d;
@@ -36,13 +83,13 @@ h1 {
     padding: 1rem 0 1rem 0;
 }
 
-.icon {
+.b-icon {
     height: 1.5rem;
 }
 
 .footer {
-    font-family: Oswald;
     font-size: 0.8rem;
+    font-family: Oswald;
     text-align: center;
 }
 
@@ -53,9 +100,8 @@ h1 {
     text-align: center;
 }
 
-.line {
+.b-line {
     display: flex;
-    margin: 0;
     align-self: center;
     height: 0.2rem;
     background-color: #fff;
@@ -67,7 +113,7 @@ h1 {
     margin-bottom: 0.3rem;
     width: 3rem;
     height: 3rem;
-    border: 1px solid #fafafa;
+    border: 1px solid #ffffff;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
@@ -101,6 +147,11 @@ a {
     .gridz {
         font-size: 0.7rem;
     }
+
+    #button {
+        bottom: 10vw;
+        right: 10vw;
+    }
 }
 
 @media screen and (max-width: 321px) {
@@ -113,6 +164,7 @@ a {
 /* Copyright */
 .copyr {
     font-size: 0.8rem;
+    font-family: Noto Sans;
     background-color: #1c1c19;
     padding: 0.8rem 0 0.8rem 0;
     position: absolute;

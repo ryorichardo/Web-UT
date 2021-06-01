@@ -1,3 +1,15 @@
 body {
     margin-top: 60px;
 }
+
+.judul {
+    background-color: #e1dace;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 5rem;
+}
+
+.isi {
+    background-color: darkslategray;
+}

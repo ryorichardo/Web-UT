@@ -8,13 +8,13 @@ body {
     height: 40vw;
 }
 
-#container1 {
+.container1 {
     width: 96.5vw;
-    height: 20vw;
+
     padding-bottom: 2rem;
 }
 
-#container1 img {
+.container1 img {
     width: 18vw;
     margin-top: 1rem;
     color: #fff;
@@ -22,7 +22,7 @@ body {
     float: left;
 }
 
-#container1 p {
+.container1 p {
     width: 75vw;
     margin-top: 4.5rem;
     color: #fff;

@@ -2,17 +2,29 @@ body {
     margin-top: 60px;
 }
 
-#content1 img{
-    width: 20vw;
-    margin-top: 2rem;
+.background {
+    margin-top: -5.5rem;
+    width: 99.5vw;
+    height: 40vw;
+}
+
+#container1 {
+    width: 96.5vw;
+    height: 20vw;
+    padding-bottom: 2rem;
+}
+
+#container1 img {
+    width: 18vw;
+    margin-top: 1rem;
     color: #fff;
-    padding-left: 5rem;
+    padding-left: 1rem;
+    float: left;
 }
 
-#content1 p{
-    font-size: 1rem;
-    color: #e1dbcf;
-    font-family: Timeless;
+#container1 p {
+    width: 75vw;
+    margin-top: 4.5rem;
+    color: #fff;
+    float: right;
 }
-
-

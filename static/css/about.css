@@ -1,18 +1,30 @@
-body {
-    margin-top: 60px;
+.container_gambar {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.background {
-    margin-top: -5.5rem;
-    width: 99.5vw;
-    height: 40vw;
+.container_text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.container_text h5 {
+    font-size: 7vw;
 }
 
 .container1 {
     width: 96.5vw;
-
     padding-bottom: 2rem;
 }
+
+
+/*Buat logo*/
 
 .container1 img {
     width: 18vw;

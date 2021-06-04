@@ -15,7 +15,7 @@
 }
 
 .container_text h5 {
-    font-size: 7vw;
+    font-size: 6.5vw;
 }
 
 .container1 {
@@ -24,19 +24,32 @@
 }
 
 
-/*Buat logo*/
+/* container grid text dan foto logo UT */
 
-.container1 img {
+.col-md-4 img {
     width: 18vw;
     margin-top: 1rem;
     color: #fff;
     padding-left: 1rem;
-    float: left;
+    padding-bottom: 1rem;
 }
 
-.container1 p {
-    width: 75vw;
-    margin-top: 4.5rem;
-    color: #fff;
-    float: right;
+.col-md-8{
+    margin: auto;
+    right: 0px;
+    padding: 10px
+}
+.col-md-8 p{
+    margin: auto;
+    color: #e1dbcf;
+    text-align: justify;
+}
+
+/* Buat ngilangin logo waktu ukuran screen jd kecil */
+@media screen and (max-width: 426px) {
+.col-6{
+    visibility:hidden;
+
+}
+
 }

@@ -44,12 +44,47 @@
     color: #e1dbcf;
     text-align: justify;
 }
+/* Navbar bawah (visi misi tujuan sifat */
+.navbar-bawah{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.btn-group{
+    width: 100%;
+}
+.btn-navbar{
+    background-color:#e1dbcf ;
+    color: #1c1c19;
+    font-family: Oswald;
+    border-radius: 0;
+    width: 98/3%;
+    border:none;
 
+}
+.btn-navbar:hover{
+    background-color:rgba(122, 122, 122, 1) ;
+    border: none;
+
+}
+.btn-navbar:focus{
+    background-color: #e1dbcf;
+    box-shadow: none;
+    font-weight:bold;
+    color: #1c1c19;
+}
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 @media screen and (max-width: 426px) {
 .col-6{
-    visibility:hidden;
+    display: none;
 
 }
+}
 
+.d.grid .gap-5 .d-mdblock{
+    margin: auto;
+    display: flex;
+}
+.container-navbar{
+    margin: auto;
 }

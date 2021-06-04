@@ -17,20 +17,62 @@ h5 {
 /* Container 1: title */
 .title {
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    text-align: justify;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 /* Logo UT */
 .logo {
-    width: 10rem;
-    margin-top: 2rem;
+    width: 15rem;
     color: #fff;
 }
 
+/* Galery */
+.h-button {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.ut-button {
+    background-color: transparent;
+    border: none;
+    width: 15rem;
+}
+
+.ut-button:focus {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.galery {
+    width: 100%;
+}
+
+.gal-col {
+    width: 25%;
+    margin: 0;
+}
+
+.gal-container {
+    position: relative;
+    height: 12vw;
+}
+
+#event {
+    display: none;
+}
+
+/* Galery Mobile */
+
+
+/* Responsive */
 @media screen and (max-width: 426px) {
     .logo {
+        width: 7rem;
+    }
+
+    .ut-button {
         width: 7rem;
     }
 }

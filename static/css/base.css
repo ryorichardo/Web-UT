@@ -51,23 +51,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 2rem;
 }
 
-#button::after {
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-
 #button:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 20px rgba(28, 28, 25, 0.3);
-
 }
 
 #button:active {
-    background-color: #555;
+    background-color: #7a7a7a;
 }
 
 #button.show {
@@ -78,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 .bg-footer {
     background-color: #9bba1d;
+    margin-top: 2rem;
 }
 
 .contact {
@@ -124,10 +115,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .gridz {
     width: 7rem;
+    transition: background-color .3s, transform .3s;
+}
+
+.gridz:active .circle{
+    background-color: rgba(122, 122, 122, 0.5);
 }
 
 .gridz:hover .circle {
     border: 2px solid rgba(50, 57, 13, 0.5);
+    box-shadow: 0 15px 20px rgba(28, 28, 25, 0.3);
 }
 
 .gridz:hover p{

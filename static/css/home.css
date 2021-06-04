@@ -18,6 +18,7 @@ h5 {
 .title {
     display: flex;
     text-align: justify;
+    text-align-last: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
@@ -36,6 +37,7 @@ h5 {
 
 .ut-button {
     background-color: transparent;
+    border-radius: 0;
     border: none;
     width: 15rem;
 }
@@ -45,13 +47,23 @@ h5 {
     box-shadow: none;
 }
 
+.ut-button:focus:hover {
+    background-color: #5C636A;
+}
+
 .galery {
     width: 100%;
+    transition: transform 0.3s, display 0.3s;
+}
+
+.galery:hover {
+    transform: scale(1.1);
 }
 
 .gal-col {
     width: 25%;
     margin: 0;
+    position: relative;
 }
 
 .gal-container {

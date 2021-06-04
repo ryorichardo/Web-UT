@@ -1,25 +1,32 @@
 /* Carousel */
-.carousel-caption {
-    max-width: 25vw;
-    bottom: 0;
-    left: 0;
-    padding: 1rem 0 0 1rem;
+.home {
+    width: 100%;
+    right: auto;
+    left: auto;
 }
 
 h5 {
     width: fit-content;
-    font-family: Oswald;
-    font-size: 3rem;
+    font-size: 7vw;
+}
+
+/* Container 1: title */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Logo UT */
+.logo {
+    width: 10rem;
+    margin-top: 2rem;
+    color: #fff;
 }
 
 @media screen and (max-width: 426px) {
-
-    .carousel-caption {
-        max-width: 30vw;
-        padding: 0.5rem 0 0 0.5rem;
-    }
-
-    h5 {
-        font-size: 1.5rem;
+    .logo {
+        width: 7rem;
     }
 }

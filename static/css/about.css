@@ -34,60 +34,73 @@
     padding-bottom: 1rem;
 }
 
-.col-md-8{
+.col-md-8 {
     margin: auto;
     right: 0px;
     padding: 10px
 }
-.col-md-8 p{
+
+.col-md-8 p {
     margin: auto;
     color: #e1dbcf;
     text-align: justify;
 }
+
+
 /* Navbar bawah (visi misi tujuan sifat */
-.navbar-bawah{
+
+.navbar-bawah {
     display: flex;
     padding-top: 30px;
     padding-bottom: 20px;
 }
-.btn-group{
+
+.btn-group {
     width: 100%;
 }
-.btn-navbar{
-    background-color:#e1dbcf ;
+
+.btn-navbar {
+    background-color: #e1dbcf;
     color: #1c1c19;
     font-family: Oswald;
     border-radius: 0;
     width: 98/3%;
-    border:none;
-
-}
-.btn-navbar:hover{
-    background-color:rgba(122, 122, 122, 1) ;
     border: none;
-
 }
-.btn-navbar:focus{
+
+.btn-navbar:hover {
+    background-color: rgba(122, 122, 122, 1);
+    border: none;
+}
+
+.btn-navbar:focus {
     background-color: #e1dbcf;
     box-shadow: none;
-    font-weight:bold;
+    font-weight: bold;
     color: #1c1c19;
 }
 
 
 /* Content Sifat */
-.row-sifat{
+
+.sifat {
+    background-image: url('../images/shadow-about-us.png');
+}
+
+.row-sifat {
     height: 50px;
     padding-bottom: 10px;
     margin-top: 10px;
 }
-.col-sifat{
+
+.col-sifat {
     border: #cacd65;
     height: 50px;
     margin: 0%;
 }
-.box-sifat{
-    background-color:#e1dbcf;
+
+.box-sifat {
+    background-color: #e1dbcf;
     font-family: Oswald;
     color: #1c1c19;
     justify-content: center;
@@ -96,7 +109,8 @@
     width: 80%;
     border-width: medium;
 }
-.tulisan-sifat{
+
+.tulisan-sifat {
     text-align: center;
     justify-content: center;
     height: 100%;
@@ -106,17 +120,18 @@
 
 
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
+
 @media screen and (max-width: 426px) {
-.col-6{
-    display: none;
-
+    .col-6 {
+        display: none;
+    }
 }
-}
 
-.d.grid .gap-5 .d-mdblock{
+.d.grid .gap-5 .d-mdblock {
     margin: auto;
     display: flex;
 }
-.container-navbar{
+
+.container-navbar {
     margin: auto;
 }

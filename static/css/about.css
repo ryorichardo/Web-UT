@@ -73,6 +73,38 @@
     font-weight:bold;
     color: #1c1c19;
 }
+
+
+/* Content Sifat */
+.row-sifat{
+    height: 50px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.col-sifat{
+    border: #cacd65;
+    height: 50px;
+    margin: 0%;
+}
+.box-sifat{
+    background-color:#e1dbcf;
+    font-family: Oswald;
+    color: #1c1c19;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    border-width: medium;
+}
+.tulisan-sifat{
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 @media screen and (max-width: 426px) {
 .col-6{

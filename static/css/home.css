@@ -75,8 +75,9 @@ h5 {
     display: none;
 }
 
-/* Galery Mobile */
-
+#event-mobile {
+    display: none;
+}
 
 /* Responsive */
 @media screen and (max-width: 426px) {

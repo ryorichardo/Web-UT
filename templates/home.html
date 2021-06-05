@@ -92,24 +92,82 @@
       <div class="col gal-col animate__animated animate__fadeIn" style="animation-delay: 0.75s">  
         <img src="{{url_for('static', filename='/images/home/galery_event/ppab.jpg')}}" class="galery">
       </div>
-    </div>
+    </div> 
   </div>
 
-  <!-- Galery mobile -->
+  <!-- Galery mobile --> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
   
+  <div class="d-md-none" data-aos="fade-up">
+    <div class="owl-carousel animate__animated animate__fadeIn" id="training-mobile">
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_training/cc.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_training/latrut1.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_training/latrut2.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_training/latrut3.jpg')}}"></div>
+    </div>
+
+    <div class="owl-carousel animate__animated animate__fadeIn" id="event-mobile">
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_event/caitt.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_event/ht.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_event/ht1.jpg')}}"></div>
+      <div class="item"><img src="{{url_for('static', filename='/images/home/galery_event/ppab.jpg')}}"></div>
+    </div>
+  </div>
 
   <!-- Galery Button Javascript -->
   <script>
     function showTraining() {
       document.getElementById("training").style.display = "flex";
+      document.getElementById("training-mobile").style.display = "flex";
       document.getElementById("event").style.display = "none";
+      document.getElementById("event-mobile").style.display = "none";
     }
     function showEvent() {
       document.getElementById("training").style.display = "none";
+      document.getElementById("training-mobile").style.display = "none";
       document.getElementById("event").style.display = "flex";
+      document.getElementById("event-mobile").style.display = "flex";
     }
   </script>
 
   <!-- Galery Mobile Javascript -->
-
+  <script>
+    var $owl = $('.owl-carousel');
+      
+    $owl.children().each( function( index ) {
+      $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+    });
+    
+    $owl.owlCarousel({
+          stagePadding: 50,
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          autoplaySpeed: 500,
+          touchDrag  : true,
+          mouseDrag  : true,    
+          nav: false,
+          dots: false,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }
+    });
+    
+    $(document).on('click', '.owl-item>div', function() {
+      // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
+      var $speed = 500;  // in ms
+      $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+    });
+  </script>
 {% endblock %}

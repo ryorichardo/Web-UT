@@ -6,9 +6,10 @@
 <div class="container container_gambar">
     <img src="{{url_for('static', filename='/images/image-atas-about-us-web-ut.png')}}" class="d-block w-100 background">
     <div class="container_text">
-        <h5>About Us.</h5>
+        <h5>About Us</h5>
     </div>
 </div>
+<br>
 <!-- logo UT dan paragraf singkat-->
 <div class="container">
     <div class="row">
@@ -24,13 +25,15 @@
 </div>
 <!-- Navbar bagian bawah -->
     <div class="btn-group container justify-content-center navbar-bawah" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary btn-navbar ">VISI & MISI</button>
-        <button type="button" class="btn btn-primary btn-navbar" style="margin-left: 1%;margin-right: 1%;">TUJUAN</button>
-        <button type="button" class="btn btn-primary btn-navbar">SIFAT</button>
+        <button type="button" class="btn btn-primary btn-navbar" onclick="showVisiMisi()">VISI & MISI</button>
+        <button type="button" class="btn btn-primary btn-navbar" style="margin-left: 1%;margin-right: 1%;" onclick="showTujuan()">TUJUAN</button>
+        <button type="button" class="btn btn-primary btn-navbar" onclick="showSifat()">SIFAT</button>
     </div>
 <!--Content Sifat -->
-<div class="container sifat">
+<div class="container" id= "sifat">
+  <!--  <img src="{{url_for('static', filename='/images/shadow-about-us.png')}}" class="shadow-about-us"> -->
     <br>
+    <div class="konten-sifat">
     <div class="row justify-content-lg-center row-sifat">
         <div class="col">
             <!--kosong-->
@@ -164,6 +167,37 @@
         </div>
     </div>
     <br>
+    </div>
 </div>
 <br>
+<!-- Content Visi&Misi -->
+<div class="container" id="visi-misi">
+    <h2> ini visi misi </h2>
+</div>
+
+<!-- Content Tujuan-->
+<div class="container" id="tujuan">
+    <h2> ini tujuan </h2>
+</div>
+
+<!-- Javascript Navbar bawah -->
+<script>
+    function showVisiMisi(){
+        document.getElementById("visi-misi").style.display= "block"
+        document.getElementById("tujuan").style.display= "none"
+        document.getElementById("sifat").style.display= "none"
+    }
+
+    function showTujuan(){
+        document.getElementById("visi-misi").style.display= "none"
+        document.getElementById("tujuan").style.display= "block"
+        document.getElementById("sifat").style.display= "none"
+    }
+
+    function showSifat(){
+        document.getElementById("visi-misi").style.display= "none"
+        document.getElementById("tujuan").style.display= "none"
+        document.getElementById("sifat").style.display= "block"
+    }
+</script>
 {% endblock %}

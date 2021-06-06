@@ -83,11 +83,20 @@
 
 /* Content Sifat */
 
-.sifat {
-    background-image: url('../images/shadow-about-us.png');
-    background-origin: padding-box;
-    border-bottom: 2px #cacd65 solid;
+.shadow-about-us{
+    position: absolute;
 }
+
+.konten-sifat{
+    position: relative;
+}
+
+#sifat {
+    background-image: url('../images/shadow-about-us.png');
+    border-bottom: 2px #cacd65 solid;
+    display: none;
+}
+
 
 .row-sifat {
     height: 50px;
@@ -136,9 +145,21 @@
     justify-content: center;
     height: 100%;
     font-size: 1.2rem;
-    padding-top: 10px;
+    align-items: center;
+    display: flex;
+}
+#visi-misi {
+    background-image: url('../images/shadow-about-us.png');
+    background-origin: padding-box;
+    border-bottom: 2px #cacd65 solid;
 }
 
+#tujuan {
+    background-image: url('../images/shadow-about-us.png');
+    background-origin: padding-box;
+    border-bottom: 2px #cacd65 solid;
+    display: none;
+}
 
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
@@ -155,4 +176,10 @@
 
 .container-navbar {
     margin: auto;
+}
+
+@media screen and (max-width: 768px){
+    .tulisan-sifat{
+        font-size: 0.85rem;
+    }
 }

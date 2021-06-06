@@ -78,12 +78,12 @@ text-decoration: none;
         text-align: left;
         margin-right: 20px;
         color: #e1dbcf;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     
     .timeline-row .timeline-time small {
         display: block;
-        font-size: .8rem;
+        font-size: .5rem;
         color: #8796af;
     }
     
@@ -287,6 +287,7 @@ text-decoration: none;
         .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
             left: 0;
         }
+
     }
 
 /*Content Carousel*/
@@ -386,6 +387,12 @@ text-decoration: none;
         font-size: 1rem;
     }
 }
+
+/* @media (max-width:767px){
+    .main-content .col-sm-6{
+        width: 100%;
+    }
+} */
 /* 
 .main-timeline .timeline:nth-child(2n) .timeline-content { */
 .back-to-top {

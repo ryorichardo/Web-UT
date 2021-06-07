@@ -92,12 +92,15 @@
 }
 
 #sifat {
-    background-image: url('../images/shadow-about-us.png');
-    border-bottom: 2px #cacd65 solid;
+
     display: none;
 }
 
-
+.shadow-content{
+    background-image: url('../images/shadow-about-us.png');
+    width: 100%;
+    border-bottom: 2px #cacd65 solid;
+}
 .row-sifat {
     height: 50px;
     padding-bottom: 10px;
@@ -148,17 +151,25 @@
     align-items: center;
     display: flex;
 }
+
+/* Content Visi&Miai */
 #visi-misi {
-    background-image: url('../images/shadow-about-us.png');
-    background-origin: padding-box;
-    border-bottom: 2px #cacd65 solid;
+
 }
 
+/* Content Tujuan */
 #tujuan {
-    background-image: url('../images/shadow-about-us.png');
-    background-origin: padding-box;
-    border-bottom: 2px #cacd65 solid;
+    
     display: none;
+    margin-bottom: 30px;
+}
+#isi-tujuan{
+}
+.poin-tujuan{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
 }
 
 /* Buat ngilangin logo waktu ukuran screen jd kecil */

@@ -64,7 +64,7 @@
     color: #1c1c19;
     font-family: Oswald;
     border-radius: 0;
-    width: 98/3%;
+    width: calc(98%/3);
     border: none;
 }
 
@@ -159,40 +159,44 @@
 
 .VISI {
     text-align: center;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .row-visi {
-    padding-top: 5rem;
-    margin-bottom: 3rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     justify-content: center;
     text-align: center;
     font-size: 1.1rem;
+    align-items: center;
+
 }
 
 .tulisan-visi {
-    font-size: 25px;
+    font-size: 1.1rem;
+    text-align: center;
+    align-items: center;
 }
 
 .MISI {
     text-align: center;
-    font-size: 50px;
+    font-size: 2rem;
 }
 
 .row-misi {
-    padding-top: 5rem;
-    margin-bottom: 5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     justify-content: center;
     text-align: center;
     font-size: 1.1rem;
 }
 
 .tulisan-misi {
-    font-size: 25px;
+    font-size: 1.1rem;
 }
 
 

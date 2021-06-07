@@ -83,24 +83,24 @@
 
 /* Content Sifat */
 
-.shadow-about-us{
+.shadow-about-us {
     position: absolute;
 }
 
-.konten-sifat{
+.konten-sifat {
     position: relative;
 }
 
 #sifat {
-
     display: none;
 }
 
-.shadow-content{
+.shadow-content {
     background-image: url('../images/shadow-about-us.png');
     width: 100%;
     border-bottom: 2px #cacd65 solid;
 }
+
 .row-sifat {
     height: 50px;
     padding-bottom: 10px;
@@ -115,22 +115,22 @@
     margin: 0%;
 }
 
-.round-number{
+.round-number {
     border-radius: 50%;
     width: 1.6rem;
     background-color: #cacd65;
     justify-content: center;
     margin: auto;
-    top:-82px;
+    top: -82px;
     position: relative;
 }
 
-.nomor-sifat{
+.nomor-sifat {
     text-align: center;
     font-family: Timeless;
     font-size: 1.2rem;
-
 }
+
 .box-sifat {
     background-color: #e1dbcf;
     font-family: Oswald;
@@ -152,28 +152,69 @@
     display: flex;
 }
 
-/* Content Visi&Miai */
-#visi-misi {
 
+/* Content Visi&Miai */
+
+#visi-misi {}
+
+.VISI {
+    text-align: center;
+    font-size: 50px;
 }
 
+.row-visi {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tulisan-visi {
+    font-size: 25px;
+}
+
+.MISI {
+    text-align: center;
+    font-size: 50px;
+}
+
+.row-misi {
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tulisan-misi {
+    font-size: 25px;
+}
+
+
 /* Content Tujuan */
+
 #tujuan {
-    
     display: none;
     margin-bottom: 30px;
 }
-#isi-tujuan{
+
+#isi-tujuan {
     padding-left: 10%;
     padding-right: 10%;
 }
-.poin-tujuan{
+
+.poin-tujuan {
     justify-content: center;
     align-items: center;
     text-align: justify;
     font-size: 1.1rem;
-    
 }
+
 
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
@@ -192,8 +233,8 @@
     margin: auto;
 }
 
-@media screen and (max-width: 768px){
-    .tulisan-sifat{
+@media screen and (max-width: 768px) {
+    .tulisan-sifat {
         font-size: 0.85rem;
     }
 }

@@ -164,12 +164,15 @@
     margin-bottom: 30px;
 }
 #isi-tujuan{
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .poin-tujuan{
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     font-size: 1.1rem;
+    
 }
 
 /* Buat ngilangin logo waktu ukuran screen jd kecil */

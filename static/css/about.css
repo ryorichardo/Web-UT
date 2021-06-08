@@ -220,6 +220,20 @@
 }
 
 
+/* Mobile Version */
+
+.accordion-button{
+    background-color: #e1dbcf;
+    font-family: Oswald;
+    color: #1c1c19;
+    border-radius: 10px;
+}
+
+.accordion-item{
+    width: 95%;
+    margin:auto;
+    border-radius: 10px;
+}
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
 @media screen and (max-width: 426px) {

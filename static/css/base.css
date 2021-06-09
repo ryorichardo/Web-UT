@@ -152,6 +152,12 @@ a {
     }
 }
 
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 0.8rem !important;
+    }
+}
+
 @media screen and (max-width: 321px) {
     .gridz {
         width: 5rem;

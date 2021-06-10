@@ -244,19 +244,37 @@
 }
 
 .accordion-collapse {
-    background: #ffffff;
+    background-image: url('../images/shadow-about-us.png');
+    width: 100%;
+    border-bottom: 2px #cacd65 solid;
     margin-top: 10px;
-    border-radius: 3px;
-    color: #1c1c19;
 }
 
+.accordion-body{
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    color: #e1dbcf;
+}
+
+.poin-tujuan-mobile{
+    border: #cacd65 1px solid;
+    width: 100%;
+    color: #e1dbcf;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    height: 2rem;
+}
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
 @media screen and (max-width: 426px) {
     .col-6 {
         display: none;
     }
-}
+
 
 .d.grid .gap-5 .d-mdblock {
     margin: auto;
@@ -264,6 +282,21 @@
 }
 
 .container-navbar {
+    margin: auto;
+}
+
+.col-md-8 {
+    margin: auto;
+    border-bottom:#e1dbcf 2px solid;
+    margin-bottom: 15px;
+}
+
+}
+
+#isi-tujuan-mobile{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     margin: auto;
 }
 

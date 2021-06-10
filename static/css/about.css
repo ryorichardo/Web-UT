@@ -273,6 +273,7 @@
     text-align: center;
     font-size: large;
     height: 2rem;
+    display: flex;
 }
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 

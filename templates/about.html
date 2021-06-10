@@ -4,7 +4,7 @@
 {% endblock %} {% block body %}
 <!-- Gambar bakcground bagian atas-->
 <div class="container container_gambar">
-    <img src="{{url_for('static', filename='/images/image-atas-about-us-web-ut.png')}}" class="d-block w-100 background">
+    <img src="{{url_for('static', filename='/images/About-us-bg.png')}}" class="d-block w-100 background">
     <div class="container_text">
         <h5>About Us</h5>
     </div>
@@ -14,7 +14,7 @@
 <div class="container penjelasan-atas">
     <div class="row">
         <div class="col-6 col-md-4" data-aos="fade-up">
-            <img src="{{url_for('static', filename='/images/logo-ut-revisi.png')}}">
+            <img src="{{url_for('static', filename='/images/logo-ut-revisi.png')}}" class="logo-ut">
         </div>
         <div class="col-md-8" data-aos="fade-up">
             <p>
@@ -176,33 +176,18 @@
 
     <!-- Content Visi&Misi -->
     <div class="container" id="visi-misi">
-        <h1>
-            <div class="VISI">
-                VISI
-            </div>
-        </h1>
+        <h1 class="VISI"> VISI </h1>
         <div class="shadow-content">
             <div class="konten-visi-misi">
-                <div class="row justify-content-lg-center row-visi">
-                    <div class="col tulisan-visi">
-                        <p> Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan </p>
-                    </div>
-                </div>
-                <br>
+                <p id="konten-visi"> Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan.</p>
             </div>
         </div>
         <br>
         <br>
-        <h1>
-            <div class="MISI">
-                MISI
-            </div>
-        </h1>
+        <h1 class="MISI"> MISI </h1>
         <div class="shadow-content">
-            <div class="row justify-content-lg-center row-misi">
-                <div class="col">
-                    <p class='tulisan-misi'> Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif </p>
-                </div>
+            <div class="konten-visi-misi">
+                <p id="konten-misi"> Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif.</p>
             </div>
         </div>
     </div>
@@ -228,7 +213,7 @@
     <!-- Accordion -->
     <div class="accordion" id="accordionPanelsStayOpenExample">
         <!-- Accordion Visi -->
-        <div class="accordion-item">
+        <div class="accordion-item animate__animated animate__fadeIn">
           <h2 class="accordion-header" id="panelsStayOpen-headingOne">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
               VISI
@@ -236,14 +221,13 @@
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
-
-              <strong>Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan.
+              <strong class="animate__animated animate__fadeIn">Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan.
             </div>
           </div>
         </div>
         <br>
         <!-- Accordion Misi -->
-        <div class="accordion-item">
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.1s">
           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
               MISI
@@ -251,13 +235,13 @@
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
             <div class="accordion-body">
-              <strong>Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif.
+              <strong class="animate__animated animate__fadeIn">Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif.
             </div>
           </div>
         </div>
         <br>
         <!-- Accordion Tujuan -->
-        <div class="accordion-item">
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.2s">
           <h2 class="accordion-header" id="panelsStayOpen-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
               TUJUAN
@@ -265,7 +249,7 @@
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
             <div class="accordion-body">
-              <strong>
+              <strong class="animate__animated animate__fadeIn">
                 <ol id="isi-tujuan-mobile">
                     <br>
                     <li class="poin-tujuan animate__animated animate__fadeIn"> Wadah pengembangan minat dan bakat dalam olahraga tenis lapangan bagi mahasiswa Institut Teknologi Bandung.</li> <br>
@@ -279,7 +263,7 @@
         </div>
         <br>
         <!-- Accordion sifat -->
-        <div class="accordion-item">
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.3s">
             <h2 class="accordion-header" id="panelsStayOpen-headingFour">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
                 SIFAT
@@ -288,28 +272,28 @@
             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
               <div class="accordion-body">
                 <strong>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn">
                         1. KEKELUARGAAN
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.1s">
                         2. ADIL
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.2s">
                         3. SPORTIF
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.3s">
                         4. PARTISIPATIF
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.4s">
                         5. PROFESIONAL
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.5s">
                         6. EFEKTIF & EFISIEN
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.6s">
                         7. TRANSPARAN
                     </div>
-                    <div class="poin-tujuan-mobile">
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.7s">
                         8. NON-PROFIT ORIENTED
                     </div>
               </div>

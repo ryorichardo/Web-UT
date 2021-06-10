@@ -26,12 +26,25 @@
 
 /* container grid text dan foto logo UT */
 
-.col-md-4 img {
+.col-6{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.col-md-4{
+    justify-content: center;
+    align-items: center;
+}
+.logo-ut{
     width: 18vw;
     margin-top: 1rem;
     color: #fff;
     padding-left: 1rem;
     padding-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .col-md-8 {
@@ -153,7 +166,7 @@
 }
 
 
-/* Content Visi&Miai */
+/* Content Visi&Misi */
 
 #visi-misi {}
 
@@ -162,44 +175,34 @@
     font-size: 2rem;
 }
 
-.row-visi {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.1rem;
-    align-items: center;
-
-}
-
-.tulisan-visi {
-    font-size: 1.1rem;
-    text-align: center;
-    align-items: center;
-}
-
 .MISI {
     text-align: center;
     font-size: 2rem;
 }
 
-.row-misi {
-    padding-top: 2rem;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.konten-visi-misi{
+    height: 5.5rem;
+    font-size: 1.1rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+#konten-visi {
+    align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 1.1rem;
+    padding-top: 2.55%;
 }
 
-.tulisan-misi {
+#konten-misi{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     font-size: 1.1rem;
+    padding-top: 2%;
 }
-
-
 /* Content Tujuan */
 
 #tujuan {
@@ -257,11 +260,11 @@
     color: #e1dbcf;
 }
 
-.poin-tujuan-mobile{
+.poin-sifat-mobile{
     border: #cacd65 1px solid;
     width: 100%;
     color: #e1dbcf;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -289,8 +292,16 @@
     margin: auto;
     border-bottom:#e1dbcf 2px solid;
     margin-bottom: 15px;
+    font-size: 0.8rem;
 }
 
+.col-md-8 p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.penjelasan-atas{
+    margin-bottom: 20px;
 }
 
 #isi-tujuan-mobile{
@@ -298,10 +309,20 @@
     text-align: center;
     align-items: center;
     margin: auto;
+    font-size: 1rem;
+}
+
+.poin-tujuan{
+    font-size: 1rem;
+}
 }
 
 @media screen and (max-width: 768px) {
     .tulisan-sifat {
         font-size: 0.85rem;
+    }
+
+    .logo-ut{
+        width: 75%;
     }
 }

@@ -23,38 +23,30 @@
     padding-bottom: 2rem;
 }
 
+.penjelasan-atas {
+    padding-top: 20px;
+}
 
 /* container grid text dan foto logo UT */
-
-.col-6{
+.col-md-3{
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-.col-md-4{
-    justify-content: center;
-    align-items: center;
-}
 .logo-ut{
     width: 18vw;
-    margin-top: 1rem;
     color: #fff;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding: 1rem 0 1rem 0;
 }
 
-.col-md-8 {
+.col-md-9 {
     margin: auto;
     right: 0px;
-    padding: 10px
-}
-
-.col-md-8 p {
-    margin: auto;
+    padding-top: 1rem;
     color: #e1dbcf;
     text-align: justify;
 }
@@ -64,7 +56,7 @@
 
 .navbar-bawah {
     display: flex;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -89,8 +81,11 @@
 .btn-navbar:focus {
     background-color: #e1dbcf;
     box-shadow: none;
-    font-weight: bold;
     color: #1c1c19;
+}
+
+#button-visi-misi {
+    font-weight: bold;;
 }
 
 
@@ -112,6 +107,7 @@
     background-image: url('../images/shadow-about-us.png');
     width: 100%;
     border-bottom: 2px #cacd65 solid;
+    margin-bottom: 30px;
 }
 
 .row-sifat {
@@ -193,8 +189,6 @@
 
 #tujuan {
     display: none;
-    margin-bottom: 30px;
-    top: 0;
 }
 
 #isi-tujuan {
@@ -230,6 +224,7 @@
 
 .accordion-item{
     background: transparent;
+    margin-bottom: 15px;
 }
 
 .accordion-collapse {
@@ -278,7 +273,11 @@
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
 @media screen and (max-width: 426px) {
-    .col-6 {
+    .penjelasan-atas {
+        padding-top: 0;
+    }
+
+    .col-md-3 {
         display: none;
     }
 
@@ -292,20 +291,16 @@
     margin: auto;
 }
 
-.col-md-8 {
+.col-md-9 {
     margin: auto;
     border-bottom:#e1dbcf 2px solid;
     margin-bottom: 15px;
     font-size: 0.8rem;
 }
 
-.col-md-8 p{
+.col-md-9 p{
     margin-left: 2%;
     margin-right: 2%;
-}
-
-.penjelasan-atas{
-    margin-bottom: 20px;
 }
 
 #isi-tujuan-mobile{
@@ -314,6 +309,7 @@
     align-items: center;
     margin: auto;
     font-size: 1rem;
+    padding: 0 0 0 1.25rem;
 }
 
 .poin-tujuan{
@@ -324,9 +320,5 @@
 @media screen and (max-width: 768px) {
     .tulisan-sifat {
         font-size: 0.85rem;
-    }
-
-    .logo-ut{
-        width: 75%;
     }
 }

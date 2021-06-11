@@ -194,6 +194,7 @@
 #tujuan {
     display: none;
     margin-bottom: 30px;
+    top: 0;
 }
 
 #isi-tujuan {
@@ -207,7 +208,6 @@
     text-align: justify;
     font-size: 1.1rem;
 }
-
 
 /* Mobile Version */
 

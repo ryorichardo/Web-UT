@@ -8,10 +8,15 @@
     padding-right: 0;
 }
 
+.background {
+    aspect-ratio: 16/9;
+}
+
 .container_text {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 2.5%;
+    left: 2.5%;
+    padding: 1rem 5rem 0 1rem;
 }
 
 .container_text h5 {
@@ -157,6 +162,7 @@
     justify-content: center;
     height: 100%;
     font-size: 1.2rem;
+    font-weight: 500;
     align-items: center;
     display: flex;
 }

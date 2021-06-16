@@ -5,68 +5,93 @@
     left: auto;
 }
 
-h5 {
+.h-carousel {
+    aspect-ratio: 16/9;
+}
+
+.carousel-caption {
+    bottom: 2.5%;
+    left: 2.5%;
+    padding: 1rem 5rem 0 1rem;
+}
+
+.home h5 {
     width: fit-content;
     font-size: 7vw;
-<<<<<<< HEAD
 }
 
 /* Container 1: title */
 .title {
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 /* Logo UT */
 .logo {
-    width: 10rem;
-    margin-top: 2rem;
+    width: 15rem;
     color: #fff;
 }
 
-@media screen and (max-width: 426px) {
-    .logo {
-        width: 7rem;
-=======
-}
-
-/* Container 1: title */
-.title {
+/* Galery */
+.h-button {
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-/* Logo UT */
-.logo {
-    width: 10rem;
-    margin-top: 2rem;
-    color: #fff;
-    position: static;
+.ut-button {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    width: 15rem;
 }
 
-.logo2 {
-    width: 10rem;
-    margin-top: 2rem;
-    color: #fff;
-    visibility: hidden; /* DI SINI */
-    position: static;
+.ut-button:focus {
+    background-color: transparent;
+    box-shadow: none;
 }
 
+.ut-button:focus:hover {
+    background-color: #5C636A;
+}
+
+.galery {
+    width: 100%;
+    transition: transform 0.3s, display 0.3s;
+}
+
+.galery:hover {
+    transform: scale(1.1);
+}
+
+.gal-col {
+    width: 25%;
+    margin: 0;
+    position: relative;
+}
+
+.gal-container {
+    position: relative;
+    height: 12vw;
+}
+
+#event {
+    display: none;
+}
+
+#event-mobile {
+    display: none;
+}
+
+/* Responsive */
 @media screen and (max-width: 426px) {
     .logo {
         width: 7rem;
     }
 
-    .logo {
-        visibility: hidden; /* DI SINI */
-    }
-
-    .logo2 {
-        visibility: visible; /* DI SINI */
->>>>>>> about
+    .ut-button {
+        width: 7rem;
     }
 }

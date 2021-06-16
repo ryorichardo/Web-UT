@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Footer */
 .bg-footer {
     background-color: #9bba1d;
+    color: #ffffff;
     margin-top: 2rem;
 }
 

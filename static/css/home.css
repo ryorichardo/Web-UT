@@ -23,10 +23,27 @@ h5 {
     width: 10rem;
     margin-top: 2rem;
     color: #fff;
+    position: static;
+}
+
+.logo2 {
+    width: 10rem;
+    margin-top: 2rem;
+    color: #fff;
+    visibility: hidden; /* DI SINI */
+    position: static;
 }
 
 @media screen and (max-width: 426px) {
     .logo {
         width: 7rem;
+    }
+
+    .logo {
+        visibility: hidden; /* DI SINI */
+    }
+
+    .logo2 {
+        visibility: visible; /* DI SINI */
     }
 }

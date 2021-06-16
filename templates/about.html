@@ -1,46 +1,332 @@
-{% extends 'base.html' %}
-{% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='/css/about.css') }}" type="text/css">
-    <title>Unit Tenis</title>
-{% endblock %}
-
-{% block body %}
-    <h1>This is about</h1>
-
-    <div class="container">
-    <!-- ACCORDION --> 
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item judul">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed judul" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body isi">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
-      </div>
+{% extends 'base.html' %} {% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/about.css') }}" type="text/css">
+<title>Unit Tenis</title>
+{% endblock %} {% block body %}
+<!-- Gambar bakcground bagian atas-->
+<div class="container container_gambar">
+    <img src="{{url_for('static', filename='/images/About-us-bg.png')}}" class="d-block w-100 background">
+    <div class="container_text">
+        <h5>About Us</h5>
     </div>
-{% endblock %}
+</div>
 
+<!-- logo UT dan paragraf singkat-->
+<div class="container penjelasan-atas">
+    <div class="row">
+        <div class="col-md-3" data-aos="fade-up">
+            <img src="{{url_for('static', filename='/images/logo-ut-revisi.png')}}" class="logo-ut">
+        </div>
+        <div class="col-md-9" data-aos="fade-up">
+            <p>
+                Unit Tenis ITB adalah unit olahraga tenis lapangan yang berada di bawah naungan Institut Teknologi Bandung. UT ITB lahir pada tanggal 19 Januari 1996, menjadi wadah untuk menempa kreativitas dan sportivitas dalam olahraga yang diminati bagi seluruh anggotanya.<br><br>                Selain itu, Unit Tenis ITB juga mendorong anggota-anggotanya dalam berbagai kegiatan organisasi dan membantu mengembangkan kemampuan anggotanya dalam olahraga tenis lapangan melalui latihan dan fasilitas yang disediakan.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Navbar bagian bawah -->
+<div data-aos="fade-up" class="container d-none d-md-block">
+
+    <div class="btn-group justify-content-center navbar-bawah d-none d-md-flex" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary btn-navbar" id="button-visi-misi" onclick="showVisiMisi()">VISI & MISI</button>
+        <button type="button" class="btn btn-primary btn-navbar" id="button-tujuan" style="margin-left: 1%;margin-right: 1%;" onclick="showTujuan()">TUJUAN</button>
+        <button type="button" class="btn btn-primary btn-navbar" id="button-sifat" onclick="showSifat()">SIFAT</button>
+    </div>
+
+<!--Content Sifat -->
+    <div id="sifat">
+        <div class="shadow-content">
+            <!--  <img src="{{url_for('static', filename='/images/shadow-about-us.png')}}" class="shadow-about-us"> -->
+            <br>
+            <div class="konten-sifat">
+                <div class="row justify-content-lg-center row-sifat">
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                KEKELUARGAAN
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    1
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.1s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                ADIL
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-lg-center">
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.8s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                NON-PROFIT ORIENTED
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    8
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                SPORTIF
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    3
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row justify-content-lg-center animate__animated animate__fadeIn" style="animation-delay: 0.6s">
+                    <div class="col col-sifat">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                TRANSPARAN
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    7
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.3s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                PARTISIPATIF
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    4
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-lg-center row-sifat">
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.5s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                EFEKTIF & EFISIEN
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    6
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-sifat animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+                        <div class="box-sifat">
+                            <p class="tulisan-sifat">
+                                PROFESIONAL
+                            </p>
+                            <div class="round-number">
+                                <p class="nomor-sifat">
+                                    5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!--kosong-->
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Content Visi&Misi -->
+    <div id="visi-misi">
+        <h1 class="VISI animate__animated animate__fadeIn"> VISI </h1>
+        <div class="shadow-content">
+            <div class="konten-visi-misi animate__animated animate__fadeIn" style="animation-delay: 0.1s">
+                <p> Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan.</p>
+            </div>
+        </div>
+        <h1 class="MISI animate__animated animate__fadeIn" style="animation-delay: 0.2s"> MISI </h1>
+        <div class="shadow-content">
+            <div class="konten-visi-misi animate__animated animate__fadeIn" style="animation-delay: 0.3s">
+                <p> Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Content Tujuan-->
+    <div id="tujuan">
+        <div class="shadow-content">
+            <ol id="isi-tujuan">
+                <br>
+                <li class="poin-tujuan animate__animated animate__fadeIn"> Wadah pengembangan minat dan bakat dalam olahraga tenis lapangan bagi mahasiswa Institut Teknologi Bandung.</li> <br>
+                <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.1s"> Sarana untuk mensosialisasikan olahraga tenis lapangan kepada civitas ITB dan masyarakat sekitar.</li> <br>
+                <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.2s"> Mengikuti dan mengadakan kejuaraan tenis setingkat perguruan tinggi dan exhibition dengan perguruan tinggi lain atau klub-klub tenis lapangan lainnya, sebagai tolak ukur nyata perkembangan kualitas teknis anggota UT ITB.</li> <br>
+                <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.3s"> Sarana pengembangan dan pemberdayaan bagi sumber daya manusia agar memiliki kompetensi di bidang tenis.</li> <br>
+                <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.4s"> Menjadi pionir dalam pengembangan informasi dan teknologi di bidang tenis Indonesia.</li> <br>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile version -->
+<div class="container d-md-none">
+    <!-- Accordion -->
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <!-- Accordion Visi -->
+        <div class="accordion-item animate__animated animate__fadeIn">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+              VISI
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              <strong class="animate__animated animate__fadeIn">Berperan dalam usaha-usaha pengembangan dan pemberdayaan masyarakat melalui olahraga tenis lapangan.
+            </div>
+          </div>
+        </div>
+       
+        <!-- Accordion Misi -->
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.1s">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              MISI
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong class="animate__animated animate__fadeIn">Wadah dalam aktualisasi dan apresiasi mahasiswa ITB untuk mengembangkan potensi dirinya dalam membentuk SDM-SDM yang kompetitif.
+            </div>
+          </div>
+        </div>
+        
+        <!-- Accordion Tujuan -->
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              TUJUAN
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong class="animate__animated animate__fadeIn">
+                <ol id="isi-tujuan-mobile">
+                    <li class="poin-tujuan animate__animated animate__fadeIn"> Wadah pengembangan minat dan bakat dalam olahraga tenis lapangan bagi mahasiswa Institut Teknologi Bandung.</li> <br>
+                    <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.1s"> Sarana untuk mensosialisasikan olahraga tenis lapangan kepada civitas ITB dan masyarakat sekitar.</li> <br>
+                    <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.2s"> Mengikuti dan mengadakan kejuaraan tenis setingkat perguruan tinggi dan exhibition dengan perguruan tinggi lain atau klub-klub tenis lapangan lainnya, sebagai tolak ukur nyata perkembangan kualitas teknis anggota UT ITB.</li> <br>
+                    <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.3s"> Sarana pengembangan dan pemberdayaan bagi sumber daya manusia agar memiliki kompetensi di bidang tenis.</li> <br>
+                    <li class="poin-tujuan animate__animated animate__fadeIn" style="animation-delay: 0.4s"> Menjadi pionir dalam pengembangan informasi dan teknologi di bidang tenis Indonesia.</li> <br>
+                </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion sifat -->
+        <div class="accordion-item animate__animated animate__fadeIn" style="animation-delay: 0.3s">
+            <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                SIFAT
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+              <div class="accordion-body">
+                <strong>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn">
+                        KEKELUARGAAN
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.1s">
+                        ADIL
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.2s">
+                        SPORTIF
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.3s">
+                        PARTISIPATIF
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.4s">
+                        PROFESIONAL
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.5s">
+                        EFEKTIF & EFISIEN
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.6s">
+                        TRANSPARAN
+                    </div>
+                    <div class="poin-sifat-mobile animate__animated animate__fadeIn" style="animation-delay: 0.7s">
+                        NON-PROFIT ORIENTED
+                    </div>
+              </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+<!-- Javascript Navbar bawah -->
+<script>
+    function showVisiMisi() {
+        document.getElementById("visi-misi").style.display = "block"
+        document.getElementById("tujuan").style.display = "none"
+        document.getElementById("sifat").style.display = "none"
+        document.getElementById("button-visi-misi").style.fontWeight = "bold"
+        document.getElementById("button-tujuan").style.fontWeight = "normal"
+        document.getElementById("button-sifat").style.fontWeight = "normal"
+    }
+
+    function showTujuan() {
+        document.getElementById("visi-misi").style.display = "none"
+        document.getElementById("tujuan").style.display = "block"
+        document.getElementById("sifat").style.display = "none"
+        document.getElementById("button-visi-misi").style.fontWeight = "normal"
+        document.getElementById("button-tujuan").style.fontWeight = "bold"
+        document.getElementById("button-sifat").style.fontWeight = "normal"
+    }
+
+    function showSifat() {
+        document.getElementById("visi-misi").style.display = "none"
+        document.getElementById("tujuan").style.display = "none"
+        document.getElementById("sifat").style.display = "block"
+        document.getElementById("button-visi-misi").style.fontWeight = "normal"
+        document.getElementById("button-tujuan").style.fontWeight = "normal"
+        document.getElementById("button-sifat").style.fontWeight = "bold"
+    }
+</script>
+{% endblock %}

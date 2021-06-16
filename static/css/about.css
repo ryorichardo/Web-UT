@@ -1,15 +1,324 @@
-body {
-    margin-top: 60px;
+.container_gambar {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.judul {
-    background-color: #e1dace;
+.container_text {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
 
-.accordion-flush .accordion-item .accordion-button {
-    border-radius: 5rem;
+.container_text h5 {
+    font-size: 6.5vw;
 }
 
-.isi {
-    background-color: darkslategray;
+.container1 {
+    width: 96.5vw;
+    padding-bottom: 2rem;
+}
+
+.penjelasan-atas {
+    padding-top: 20px;
+}
+
+/* container grid text dan foto logo UT */
+.col-md-3{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-ut{
+    width: 18vw;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+.col-md-9 {
+    margin: auto;
+    right: 0px;
+    padding-top: 1rem;
+    color: #e1dbcf;
+    text-align: justify;
+}
+
+
+/* Navbar bawah (visi misi tujuan sifat */
+
+.navbar-bawah {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn-navbar {
+    background-color: #e1dbcf;
+    color: #1c1c19;
+    font-family: Oswald;
+    border-radius: 0;
+    width: calc(98%/3);
+    border: none;
+}
+
+.btn-navbar:hover {
+    background-color: rgba(122, 122, 122, 1);
+    border: none;
+}
+
+.btn-navbar:focus {
+    background-color: #e1dbcf;
+    box-shadow: none;
+    color: #1c1c19;
+}
+
+#button-visi-misi {
+    font-weight: bold;;
+}
+
+
+/* Content Sifat */
+
+.shadow-about-us {
+    position: absolute;
+}
+
+.konten-sifat {
+    position: relative;
+}
+
+#sifat {
+    display: none;
+}
+
+.shadow-content {
+    background-image: url('../images/shadow-about-us.png');
+    width: 100%;
+    border-bottom: 2px #cacd65 solid;
+    margin-bottom: 30px;
+}
+
+.row-sifat {
+    height: 50px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    top: 10px;
+    bottom: 10px;
+}
+
+.col-sifat {
+    border: #cacd65;
+    height: 50px;
+    margin: 0%;
+}
+
+.round-number {
+    border-radius: 50%;
+    width: 1.6rem;
+    background-color: #cacd65;
+    justify-content: center;
+    margin: auto;
+    top: -82px;
+    position: relative;
+}
+
+.nomor-sifat {
+    text-align: center;
+    font-family: Timeless;
+    font-size: 1.2rem;
+}
+
+.box-sifat {
+    background-color: #e1dbcf;
+    font-family: Oswald;
+    color: #1c1c19;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+    top: 0px;
+    border: 2px #cacd65 solid;
+}
+
+.tulisan-sifat {
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.2rem;
+    align-items: center;
+    display: flex;
+}
+
+
+/* Content Visi&Misi */
+
+#visi-misi {}
+
+.VISI {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.MISI {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.konten-visi-misi{
+    padding: 2rem 0 1rem 0;
+    font-size: 1.1rem;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+/* Content Tujuan */
+
+#tujuan {
+    display: none;
+}
+
+#isi-tujuan {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.poin-tujuan {
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/* Mobile Version */
+
+.accordion-button{
+    background-color: #e1dbcf;
+    font-family: Oswald;
+    color: #1c1c19;
+    border-radius: 10px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;;
+}
+
+.accordion-item{
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+.accordion-collapse {
+    background-image: url('../images/shadow-about-us.png');
+    width: 100%;
+    border-bottom: 2px #cacd65 solid;
+    margin-top: 10px;
+}
+
+.accordion-body{
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    color: #e1dbcf;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:#e1dbcf;
+    color: #1c1c19;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #1c1c19;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(202, 205, 101, 0.75);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.poin-sifat-mobile{
+    border: #cacd65 1px solid;
+    width: 100%;
+    color: #e1dbcf;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    height: 2rem;
+    display: flex;
+}
+/* Buat ngilangin logo waktu ukuran screen jd kecil */
+
+@media screen and (max-width: 426px) {
+    .penjelasan-atas {
+        padding-top: 0;
+    }
+
+    .col-md-3 {
+        display: none;
+    }
+
+
+.d.grid .gap-5 .d-mdblock {
+    margin: auto;
+    display: flex;
+}
+
+.container-navbar {
+    margin: auto;
+}
+
+.col-md-9 {
+    margin: auto;
+    border-bottom:#e1dbcf 2px solid;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+
+.col-md-9 p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#isi-tujuan-mobile{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    font-size: 1rem;
+    padding: 0 0 0 1.25rem;
+}
+
+.poin-tujuan{
+    font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .tulisan-sifat {
+        font-size: 0.85rem;
+    }
 }

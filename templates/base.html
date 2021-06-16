@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.0.0-dist/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='aos-master/dist/aos.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='animate.css-4.1.1/animate.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='/css/base.css')}}" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" type="text/css"> {% block head %}{% endblock %}
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap-5.0.0-dist/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='aos-master/dist/aos.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='animate.css-4.1.1/animate.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='/css/base.css')}}" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" type="text/css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" type="text/css">  
+        {% block head %}{% endblock %}
+    </head>
+    <body>
 
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-ut fixed-top">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-ut fixed-top">
         <a></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,53 +51,51 @@
 
         <!-- Section: Links  -->
         <section class="contact">
-            <div class="container text-center text-md-start">
-                <div class="container">
-                    <div class="row justify-content-center" style="margin-bottom: 1rem;">
-                        <div class="col b-line"></div>
-                        <div class="col col-auto contactus">
-                            <h5>CONTACT US</h5>
-                        </div>
-                        <div class="col b-line"></div>
-                    </div>
+          <div class="container text-center text-md-start">
+            <div class="container">
+              <div class="row justify-content-center" style="margin-bottom: 1rem;">
+                <div class="col b-line"></div>
+                <div class="col col-auto contactus">
+                  <h5>CONTACT US</h5>
                 </div>
+                <div class="col b-line"></div>
+              </div>
+            </div>
 
-                <!-- Grid row -->
-                <div class="row justify-content-center footer">
-                    <div class="col col-sm-1 gridz">
-                        <a href="http://instagram.com/ut_itb">
-                            <div class="circle">
-                                <img src="{{url_for('static', filename='/images/footer/insta.png')}}" class="b-icon">
-                            </div>
-                            <p>@ut_itb</p>
-                        </a>
-                    </div>
+            <!-- Grid row -->
+            <div class="row justify-content-center footer">
+              <div class="col col-sm-1 gridz"> 
+                <a href="http://instagram.com/ut_itb"> 
+                  <div class="circle">
+                    <img src="{{url_for('static', filename='/images/footer/insta.png')}}" class="b-icon">
+                  </div>
+                  <p>@ut_itb</p>
+                </a>
+              </div>
 
-                    <div class="col col-sm-1 gridz">
-                        <a href=#>
-                            <div class="circle">
-                                <img src="{{url_for('static', filename='/images/footer/linkedin.png')}}" class="b-icon">
-                            </div>
-                            <p>Unit Tenis ITB</p>
-                        </a>
-                    </div>
+              <div class="col col-sm-1 gridz" >
+                <a href="https://www.linkedin.com/company/unit-tenis-itb/"> 
+                  <div class="circle">
+                    <img src="{{url_for('static', filename='/images/footer/linkedin.png')}}" class="b-icon">
+                  </div>
+                  <p>Unit Tenis ITB</p>
+                </a>
+              </div>
 
-                    <div class="col col-sm-1 gridz">
-                        <div class="circle">
-                            <img src="{{url_for('static', filename='/images/footer/phone.png')}}" class="b-icon">
-                        </div>
-                        <p>012 345 6789</p>
-                    </div>
-
-                    <div class="col col-sm-1 gridz">
-                        <div class="circle">
-                            <img src="{{url_for('static', filename='/images/footer/email.png')}}" class="b-icon">
-                        </div>
-                        <p>ut_itb@km.itb.ac.id</p>
-                    </div>
-
+              <div class="col col-sm-1 gridz">  
+                <div class="circle">
+                  <img src="{{url_for('static', filename='/images/footer/phone.png')}}" class="b-icon">
                 </div>
-                <!-- Grid row -->
+                <p>012 345 6789</p>
+              </div>
+
+              <div class="col col-sm-1 gridz">  
+                <div class="circle">
+                  <img src="{{url_for('static', filename='/images/footer/email.png')}}" class="b-icon">
+                </div>
+                <p>ut_itb@km.itb.ac.id</p>
+              </div>
+
             </div>
         </section>
         <!-- Section: Links  -->
@@ -114,8 +112,13 @@
         <img src="{{url_for('static', filename='/images/scroll.png')}}" class="arrow">
     </a>
 
-    <!-- JQuery -->
-    <script src="{{url_for('static', filename='jquery.js')}}"></script>
+      <!-- Back to top button -->
+      <a id="button">
+        <img src="{{url_for('static', filename='/images/scroll.png')}}" class="arrow">
+      </a>
+
+      <!-- JQuery -->
+      <script src="{{url_for('static', filename='jquery.js')}}"></script>
 
     <!-- Bootstrap Javascript -->
     <script src="{{url_for('static', filename='bootstrap-5.0.0-dist/js/bootstrap.bundle.min.js')}}"></script>
@@ -124,30 +127,28 @@
     <script src="{{url_for('static', filename='aos-master/dist/aos.js')}}"></script>
     <script>
         AOS.init({
-            easing: 'ease',
-            duration: 500
-        });
-    </script>
+				  easing: 'ease-in-back',
+				  duration: 500
+			  });
+      </script>    
 
-    <!-- Button to top Javascript -->
-    <script>
+      <!-- Button to top Javascript -->
+      <script>
         var btn = $('#button');
 
         $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
+          if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
         });
 
         btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            });
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0});
         });
-    </script>
+      </script>
 
-</body>
+    </body>
 </html>

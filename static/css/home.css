@@ -8,6 +8,28 @@
 h5 {
     width: fit-content;
     font-size: 7vw;
+<<<<<<< HEAD
+}
+
+/* Container 1: title */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Logo UT */
+.logo {
+    width: 10rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 426px) {
+    .logo {
+        width: 7rem;
+=======
 }
 
 /* Container 1: title */
@@ -45,5 +67,6 @@ h5 {
 
     .logo2 {
         visibility: visible; /* DI SINI */
+>>>>>>> about
     }
 }

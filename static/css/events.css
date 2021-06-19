@@ -49,7 +49,7 @@ text-decoration: none;
         position: relative;
         padding: 10px;
         padding-top: 5%;
-        padding-bottom: 3rem;
+        padding-bottom: 10rem;
         margin: 0 auto;
         overflow: hidden;
         color: #ffffff;
@@ -81,7 +81,7 @@ text-decoration: none;
         text-align: left;
         margin-right: 20px;
         color: #e1dbcf;
-        font-size: 1rem;
+        font-size: 1.5rem;
         /* font-family: "timeless"; */
     }
     
@@ -236,6 +236,17 @@ text-decoration: none;
         overflow: hidden; */
         display: none;
     }
+    @media (max-width: 1400px) {
+        .timeline-row .timeline-time{
+            font-size: 1.25rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .timeline-row .timeline-time{
+            font-size: 1rem;
+        }
+    }
     
     @media (max-width: 767px) {
         .timeline {
@@ -346,7 +357,6 @@ text-decoration: none;
 .main-content .row{
     margin-top: 10%;
     padding-top: 10%;
-    margin-bottom: 20%;
 }
 
 .main-content .row .container{
@@ -354,28 +364,26 @@ text-decoration: none;
 }
 
 .main-content .row .container:nth-child(1){
-    padding-left: 2rem;
+    
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 50%;
     position: relative;
 }
 
-.main-content .row .container:nth-child(2){
-    padding-right: 2rem;
-}
+/* .main-content .row .container:nth-child(2){
+    
+} */
 
 .main-content .row:nth-child(even) .container:nth-child(1){
     position: relative;
     padding-left: 0.75rem;
-    padding-right: 2rem;
     left: 50%;
 }
 
 .main-content .row:nth-child(even) .container:nth-child(2){
     position: relative;
     left: -50%;
-    padding-left: 2rem;
     padding-right: 0.75rem;
 }
 
@@ -447,6 +455,22 @@ text-decoration: none;
     color: #e1dbcf;
 }
 
+@media (max-width: 1024px) {
+
+    .main-content .container .container-fluid .text{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .label{
+        font-size: 1.25rem;
+    }
+
+    .main-content .container .container-fluid .text{
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 767px) {
 

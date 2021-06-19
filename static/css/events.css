@@ -12,6 +12,8 @@
 .events h5 {
     width: fit-content;
     font-size: 7vw;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 a:link {

@@ -141,7 +141,7 @@
 
 .nomor-sifat {
     text-align: center;
-    font-family: Timeless;
+    font-family: Oswald;
     font-size: 1.2rem;
 }
 
@@ -272,9 +272,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: large;
+    font-size: 12.8px;
     height: 2rem;
     display: flex;
+}
+
+.isi-tujuan-mobile{
+    font-size: 1.1rem;
 }
 /* Buat ngilangin logo waktu ukuran screen jd kecil */
 
@@ -319,7 +323,7 @@
 }
 
 .poin-tujuan{
-    font-size: 1rem;
+    font-size: 12.8px;
 }
 }
 

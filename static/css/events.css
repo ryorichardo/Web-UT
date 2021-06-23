@@ -238,11 +238,11 @@ text-decoration: none;
         overflow: hidden; */
         display: none;
     }
-    @media (max-width: 1400px) {
+    /* @media (max-width: 1400px) {
         .timeline-row .timeline-time{
             font-size: 1.25rem;
         }
-    }
+    } */
 
     @media (max-width: 992px) {
         .timeline-row .timeline-time{

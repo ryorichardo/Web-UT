@@ -3,6 +3,7 @@ body {
     font-family: Timeless;
     background-color: #1c1c19;
     color: #ffffff;
+    overflow-x: hidden;
     /* Show vertical scrollbar */
 }
 
@@ -69,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 .bg-footer {
     background-color: #9bba1d;
     color: #ffffff;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .contact {
@@ -164,11 +165,14 @@ a {
         width: 5rem;
         font-size: 0.5rem;
     }
+
+    .bg-footer {
+        margin-top: 1rem;
+    }
 }
 
 /* Copyright */
 .copyr {
-    font-size: 0.8rem;
     font-family: Noto Sans;
     background-color: #1c1c19;
     padding: 0.8rem 0 0.8rem 0;

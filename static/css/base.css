@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 5rem 0 5rem;
 }
 
+.nav-home {
+    margin-left: 7.5rem;
+}
+
 .container-fluid {
     text-align: center;
 }
@@ -137,6 +141,12 @@ a {
     color: #fff;
     text-decoration: none;
     
+}
+
+@media screen and (max-width: 991.5px) {
+    .nav-home {
+        margin-left: 5rem;
+    }
 }
 
 @media screen and (max-width: 426px) {

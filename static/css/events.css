@@ -501,12 +501,14 @@ text-decoration: none;
 
     .main-content .row:nth-child(odd) .container:nth-child(1){
         width: 100%;
+        margin-bottom: 2.5rem;
     }
 
     .main-content .row:nth-child(even) .container:nth-child(1){
         position: none;
         left: initial;
         width: 100%;
+        margin-bottom: 2.5rem;
     }
     
     .main-content .row:nth-child(even) .container:nth-child(2){

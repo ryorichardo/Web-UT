@@ -362,12 +362,11 @@ text-decoration: none;
 
 .main-content .row .container{
     float: left;
+    display: flex;
+    align-items: center;
 }
 
 .main-content .row .container:nth-child(1){
-    
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     width: 50%;
     position: relative;
 }
@@ -407,8 +406,9 @@ text-decoration: none;
 
 .main-content .container .container-fluid{
     border: medium solid #e1dbcf;
-    display: flex;
+    display: block;
     align-items: center;
+    height: fit-content;
 }
 
 .main-content .text-container{
@@ -445,9 +445,9 @@ text-decoration: none;
     vertical-align: middle;
 }
 
-/* .main-content .container .container-fluid .text p{
-    top: -50%;
-} */
+.main-content .container .container-fluid .text p{
+    margin-bottom: 0;
+}
 
 .label{
     font-family: 'Noto Sans', sans-serif;

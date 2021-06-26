@@ -93,4 +93,9 @@
     .ut-button {
         width: 7rem;
     }
+
+    .training  {
+        width: 8rem;
+        padding-right: 1.2rem;
+    }
 }

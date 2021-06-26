@@ -2,9 +2,12 @@
 body {
     font-family: Timeless;
     background-color: #1c1c19;
-    color: #ffffff;
     overflow-x: hidden;
     /* Show vertical scrollbar */
+}
+
+p {
+    color: #e1dbcf;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -140,7 +143,10 @@ h1, h2, h3, h4, h5, h6 {
 a {
     color: #fff;
     text-decoration: none;
-    
+}
+
+.footer-text {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 991.5px) {

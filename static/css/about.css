@@ -21,6 +21,7 @@
 
 .container_text h5 {
     font-size: 6.5vw;
+    color: #ffffff;
 }
 
 .container1 {
@@ -143,12 +144,12 @@
     text-align: center;
     font-family: Oswald;
     font-size: 1.2rem;
+    color: #1c1c19;
 }
 
 .box-sifat {
     background-color: #e1dbcf;
     font-family: Oswald;
-    color: #1c1c19;
     justify-content: center;
     margin: auto;
     height: 100%;
@@ -161,10 +162,11 @@
     text-align: center;
     justify-content: center;
     height: 100%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
     align-items: center;
     display: flex;
+    color: #1c1c19;
 }
 
 
@@ -175,11 +177,13 @@
 .VISI {
     text-align: center;
     font-size: 2rem;
+    color: #ffffff;
 }
 
 .MISI {
     text-align: center;
     font-size: 2rem;
+    color: #ffffff;
 }
 
 .konten-visi-misi{
@@ -200,6 +204,7 @@
 #isi-tujuan {
     padding-left: 10%;
     padding-right: 10%;
+    color: #e1dbcf;
 }
 
 .poin-tujuan {
